@@ -13,6 +13,7 @@ const numberType = 123;
 const booleanType = true;
 const nullType = null;
 const undefinedType = undefined;
+
 console.log(getTypeOf(stringType));
 console.log(getTypeOf(numberType));
 console.log(getTypeOf(booleanType));

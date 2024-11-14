@@ -7,6 +7,15 @@ Answer following questions in this file.
 ```
 javascript is a programming language, which allows you to implement complex features on web pages.
 Some examples of these complex features are displaying timely content updates, interactive maps, animated 2D/3D graphics, scrolling video jukeboxes etc.
+It is a core technology of the World Wide Web, alongside HTML and CSS.
+
+Some core characteristics of JavaScript:
+
+**Lightweight and interpreted:** JavaScript runs in the browser without needing pre-compilation.
+**Prototype-based:** Objects in JavaScript inherit directly from other objects via prototypes.
+**Multi-paradigm:** JavaScript supports procedural, object-oriented and functional programming.
+**Single-threaded:** JavaScript executes in a single-threaded environment (one operation at a time) but supports asynchronous operations.
+**Dynamically typed:** Variables can change type at runtime.
 ```
 
 ## About values
@@ -21,13 +30,20 @@ When we assign a primitive value to a variable, a copy of that value is created 
 ### Which are primitive values? Explain them with at least one example for primitive.
 
 ```
-String: In any computer language, a String is a sequence of characters used to represent text. For example, "Hello world".
-Number: In JavaScript, Number is a numeric data type in the double-precision 64-bit floating point format. For example: 64.
-BigInt: BigInt is a numeric data type that can represent integers in arbitrary precision format. For example, 0o377777777777777777.
-Boolean: A boolean is a logical data type that can only have the values true or false. For example: true.
-Undefined: Undefined is a primitive value automatically assigned to variables that have just been declared, or to formal arguments for which there are no actual arguments. For example: undefined.
-Symbol: Symbol is a built-in object whose constructor returns a symbol primitive, which is guaranteed to be unique. Symbols are often used to add unique property keys to an object that won’t collide with keys any other code might add. An example of a symbol would be "const symbolExample = Symbol('foo');".
-Null: A null value represents a reference that points, generally intentionally, to a non-existent or invalid object or address. For example: null.
+**String:** In any computer language, a String is a sequence of characters used to represent text. For example:
+let stringExample = "Hello world";
+**Number:** In JavaScript, Number is a numeric data type in the double-precision 64-bit floating point format. For example: 
+let numberExample = 64;
+**BigInt:** BigInt is a numeric data type that can represent integers in arbitrary precision format. For example:
+let bigInt example =  0o377777777777777777;
+**Boolean:** A boolean is a logical data type that can only have the values true or false. For example: 
+let booleanExample = true;
+**Undefined:** Undefined is a primitive value automatically assigned to variables that have just been declared, or to formal arguments for which there are no actual arguments. For example: 
+let undefinedExample = undefined;
+**Symbol:** Symbol is a built-in object whose constructor returns a symbol primitive, which is guaranteed to be unique. Symbols are often used to add unique property keys to an object that won’t collide with keys any other code might add. An example of a symbol would be; 
+const symbolExample = Symbol('foo');".
+**Null:** A null value represents a reference that points, generally intentionally, to a non-existent or invalid object or address. For example: 
+let nullExample = nul;
 ```
 
 ## About variables
@@ -53,11 +69,25 @@ const: The const statement declares a variable, assigning a value that cannot be
 ### Which are the most used var naming conventions in JS?
 
 ```
-camelCase: It is commonly used for naming variables. For example "variableName" or "userEmail".
+The most used variable naming conventions in JavaScript are:
 
-Boolean variables should use "is" or "has" as prefixes, making it clear that they represent a true or false condition. For example: "isLogged", "hasEnoughMoney".
+camelCase: Commonly used for variables and function names.
 
-Short identifiers: Using short identifiers and avoiding non-common abbreviations is a commonly used convention. Good variable names are usually between 3-10 characters, but that's only a hint since they must be descriptive. For example, "accelerometer" is better than "acclmtr".
+let myVariableName = "example";
+
+function myFunctionName() {
+  // function code
+}
+PascalCase: Commonly used for class names.
+
+class MyClassName {
+  constructor() {
+    // constructor code
+  }
+}
+snake_case: Sometimes used for constants.
+
+const MY_CONSTANT = 100;
 
 ```
 
@@ -66,21 +96,21 @@ Short identifiers: Using short identifiers and avoiding non-common abbreviations
 ### Which are the main comparison operators in JS? Explain them with at least one example for primitive.
 
 ```
-Equal (==): Returns true if the operands are equal.
+**Equal (==):** Returns true if the operands are equal.
 
 Example:
 let isVerified = true;
 let hasSubscription = 1;
 console.log(isVerified == hasSubscription); // Output: true (1 is truthy, so it’s coerced to true)
 
-Not equal (!=): Returns true if the operands are not equal.
+**Not equal (!=):** Returns true if the operands are not equal.
 
 Example:
 let isVerified = true;
 let hasSubscription = 0;
 console.log(isVerified != hasSubscription); // Output: true (0 is falsy, so it’s coerced to false)
 
-Strict equal (===): Returns true if the operands are equal on the same type.
+**Strict equal (===):** Returns true if the operands are equal on the same type.
 
 Example:
 let isPremiumUser = false;
@@ -88,14 +118,14 @@ let isTrialActive = 0;
 console.log(isPremiumUser === isTrialActive); // Output: false (boolean vs number, different types)
 
 
-Strict not equal (!==): Returns true if the operands are of the same type but not equal, or are a different type.
+**Strict not equal (!==):** Returns true if the operands are of the same type but not equal, or are a different type.
 
 Example:
 let isVerified = true;
 let hasSubscription = "true";
 console.log(isVerified !== hasSubscription); // Output: true (boolean vs string, different types)
 
-Greater than (>): Returns true if the left operand is greater than the right operand.
+**Greater than (>):** Returns true if the left operand is greater than the right operand.
 
 Example:
 let userAge = 25;
